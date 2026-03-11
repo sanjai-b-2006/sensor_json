@@ -1,0 +1,66 @@
+[
+  {
+    "timestamp": "2026-03-10T22:00:00",
+    "TDS": 350.5,
+    "pH": 7.2,
+    "Turbidity": 3.8,
+    "Hardness": 120.5,
+    "Conductivity": 450.0
+  },
+  {
+    "timestamp": "2026-03-10T22:01:00",
+    "TDS": 355.2,
+    "pH": 7.1,
+    "Turbidity": 4.1,
+    "Hardness": 122.0,
+    "Conductivity": 455.5
+  },
+  {
+    "timestamp": "2026-03-10T22:02:00",
+    "TDS": 420.0,
+    "pH": 6.8,
+    "Turbidity": 5.5,
+    "Hardness": 150.0,
+    "Conductivity": 510.0
+  },
+  {
+    "timestamp": "2026-03-10T22:03:00",
+    "TDS": 980.5,
+    "pH": 8.9,
+    "Turbidity": 12.4,
+    "Hardness": 280.0,
+    "Conductivity": 850.0
+  },
+  {
+    "timestamp": "2026-03-10T22:04:00",
+    "TDS": 2100.0,
+    "pH": 9.2,
+    "Turbidity": 18.2,
+    "Hardness": 450.0,
+    "Conductivity": 1200.0
+  },
+  {
+    "timestamp": "2026-03-10T22:05:00",
+    "TDS": 1500.0,
+    "pH": 8.5,
+    "Turbidity": 9.0,
+    "Hardness": 300.0,
+    "Conductivity": 900.0
+  },
+  {
+    "timestamp": "2026-03-10T22:06:00",
+    "TDS": 500.0,
+    "pH": 7.4,
+    "Turbidity": 4.5,
+    "Hardness": 180.0,
+    "Conductivity": 500.0
+  },
+  {
+    "timestamp": "2026-03-10T22:07:00",
+    "TDS": 320.5,
+    "pH": 7.3,
+    "Turbidity": 3.2,
+    "Hardness": 115.0,
+    "Conductivity": 430.0
+  }
+]
