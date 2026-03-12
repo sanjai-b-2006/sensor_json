@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+/* Apply font everywhere except material symbol elements */
+*:not(.material-symbols-rounded):not(.material-icons):not(i):not(svg) {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+
+.stApp {
+    background: radial-gradient(circle at top right, #e0f2f1, #ffffff),
+        radial-gradient(circle at bottom left, #e1f5fe, #ffffff);
+    background-attachment: fixed;
+}
+
+/* Glassmorphism Core */
+/* Glassmorphism Card (Used as .stCard in app.py) */
+.glass-card, .stCard {
+    background: rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    border-radius: 24px !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+    padding: 24px !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    background: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Sidebar Customization - HIDDEN PERMANENTLY */
+section[data-testid="stSidebar"] {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+}
+
+[data-testid="collapsedControl"],
+[data-testid="stSidebarCollapseButton"],
+[data-testid="baseButton-headerNoPadding"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Control Center (Main Screen Replacement for Sidebar) */
+.control-panel {
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05) !important;
+    padding: 20px !important;
+    margin-bottom: 30px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.metric-container [data-testid="stMetric"] {
+    background: rgba(255, 255, 255, 0.6) !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
+    padding: 15px !important;
+}
+
+/* Header UI */
+.main-header {
+    background: linear-gradient(135deg, #01579B, #00BCD4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 3.2rem;
+    letter-spacing: -1.5px;
+    margin-bottom: 0;
+}
+
+.sub-header {
+    color: #546e7a;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.safe {
+    background: #e8f5e9 !important;
+    color: #2e7d32 !important;
+    border: 1px solid #c8e6c9 !important;
+}
+
+.unsafe {
+    background: #ffebee !important;
+    color: #c62828 !important;
+    border: 1px solid #ffcdd2 !important;
+}
+
+.caution {
+    background: #fffde7 !important;
+    color: #f9a825 !important;
+    border: 1px solid #fff9c4 !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00BCD4;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.stButton>button {
+    background: linear-gradient(135deg, #01579B, #00838F) !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    border-radius: 14px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(1, 87, 155, 0.2) !important;
+}
+
+.stButton>button:hover {
+    transform: scale(1.02) !important;
+    box-shadow: 0 8px 25px rgba(1, 87, 155, 0.3) !important;
+}
+
+/* Section Title Backgrounds - Premium Polish */
+.title-bg {
+    padding: 8px 18px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bg-molecular {
+    background: linear-gradient(135deg, #01579B, #0288D1);
+}
+
+.bg-distribution {
+    background: linear-gradient(135deg, #00838F, #00ACC1);
+}
+
+.bg-analysis {
+    background: linear-gradient(135deg, #2E7D32, #43A047);
+}
+
+.bg-domestic {
+    background: linear-gradient(135deg, #455A64, #607D8B);
+}
+
+.bg-history {
+    background: linear-gradient(135deg, #5E35B1, #7E57C2);
+}
+
+/* Hidden Streamlit Branding & Toolbars */
+[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+[data-testid="stToolbar"],
+[data-testid="manage-app-button"] {
+    visibility: hidden;
+    display: none;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
